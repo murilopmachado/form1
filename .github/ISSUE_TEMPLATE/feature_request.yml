@@ -77,11 +77,3 @@ body:
       description: Add any other context, screenshots, or mockups about the feature request here.
     validations:
       required: false
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this feature request, you agree to follow our Code of Conduct
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
