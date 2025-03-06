@@ -1,0 +1,111 @@
+name: Help Wanted
+description: Create an issue for tasks where community help is needed
+title: "[Help Wanted]: "
+labels: ["help wanted"]
+assignees:
+  - onlook-dev
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Help Wanted
+        
+        Thanks for creating a "Help Wanted" issue for Onlook! This template is for tasks where we're actively seeking community contributions.
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Type of Help Needed
+      description: What type of help are you looking for?
+      options:
+        - Bug Fix
+        - Feature Implementation
+        - Documentation
+        - Testing
+        - Design
+        - Performance Optimization
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty Level
+      description: How challenging is this task?
+      options:
+        - Beginner Friendly
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Project Area
+      description: What area of Onlook does this relate to?
+      multiple: true
+      options:
+        - Browser
+        - Editor
+        - Write-to-code
+        - AI chat
+        - Variables
+        - Components
+        - Hosting
+        - Documentation
+        - Testing
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a detailed description of what needs to be done
+      placeholder: We need help with...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What are the requirements for this task to be considered complete?
+      placeholder: |
+        - [ ] Requirement 1
+        - [ ] Requirement 2
+        - [ ] Requirement 3
+    validations:
+      required: true
+  - type: textarea
+    id: resources
+    attributes:
+      label: Helpful Resources
+      description: Provide links to relevant documentation, code, or other resources that might help contributors
+      placeholder: |
+        - [Link to relevant code](URL)
+        - [Documentation](URL)
+    validations:
+      required: false
+  - type: textarea
+    id: getting_started
+    attributes:
+      label: Getting Started
+      description: Provide guidance on how to get started with this task
+      placeholder: To get started with this task, you should...
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Person
+      description: Who should contributors contact if they have questions?
+      placeholder: GitHub username or email
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Code of Conduct
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
